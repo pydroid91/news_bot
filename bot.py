@@ -18,7 +18,7 @@ def main():
             bot.send_message(user_id, news[0] + '\n' + news[1])
 
 
-schedule.every(6).seconds.do(main)
+schedule.every(100).seconds.do(main)
 while True:
     schedule.run_pending()
 
