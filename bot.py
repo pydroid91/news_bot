@@ -3,6 +3,7 @@ import telebot
 from news_collection import update_news
 from news_collection import LATEST_NEWS, SEND_NEWS, SEND_LINKS
 bot = telebot.TeleBot('6066401472:AAGRIbmSMl3fqcwO2YT8TKdeSsAk6oADjmY')
+
 user_id=5123972842
 
 def main():
@@ -21,6 +22,3 @@ def main():
 schedule.every(100).seconds.do(main)
 while True:
     schedule.run_pending()
-
-if __name__ == '__main__':
-    bot.polling(none_stop=True)
